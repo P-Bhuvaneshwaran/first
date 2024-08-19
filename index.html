@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="primary">
+        <div class="top">
+            <h1>Quiz</h1>
+            <p>Time Left : <span id="timeOut"></span> seconds</p>
+        </div>
+        <div class="middle">
+            <div class="box">
+                <h3>Question: <span id="quesCount"></span></h3>
+                <p id="Question"></p>
+            </div>
+            <div class="box-2">
+                <div class="options" onclick="userAns(event)"></div>
+                <div class="options" onclick="userAns(event)"></div>
+                <div class="options" onclick="userAns(event)"></div>
+                <div class="options" onclick="userAns(event)"></div>
+            </div>
+        </div>
+        <div class="bottom">
+            <button type="button" id="prevBtn" onclick="prevClick()">Previous</button>
+            <button type="button" id="nextBtn" onclick="nextClick()">Next</button>
+            <button type="button" id="subBtn">Submit</button>
+        </div>
+    </div>
+    <div class="secondary">
+        <h2>Quiz Result</h2>
+        <p>Your Score: <span id="scoreCount"></span> out of <span id="totalCount">5</span></p>
+        <div class="btns">
+            <button id="show-btn">Show Answers</button>
+            <button id="restart-btn" onclick="restartFunc()">Restart Quiz</button>
+        </div>
+    </div>
+    <div class="ternary">
+        <h2>Quiz Result</h2>
+        <p onclick="restartFunc()">Answers</p>
+        <div class="SummaryBox">
+            <div class="summary">
+                <p>Q1: <span class="Question"></span></p>
+                <p id="ans">Answer: <span class="answer"></span></p>
+                <p>Your Answer: <span class="yourAnswer"></span></p>
+            </div>
+            <div class="summary">
+                <p>Q1: <span class="Question"></span></p>
+                <p id="ans">Answer: <span class="answer"></span></p>
+                <p>Your Answer: <span class="yourAnswer"></span></p>
+            </div>
+            <div class="summary">
+                <p>Q1: <span class="Question"></span></p>
+                <p id="ans">Answer: <span class="answer"></span></p>
+                <p>Your Answer: <span class="yourAnswer"></span></p>
+            </div>
+            <div class="summary">
+                <p>Q1: <span class="Question"></span></p>
+                <p id="ans">Answer: <span class="answer"></span></p>
+                <p>Your Answer: <span class="yourAnswer"></span></p>
+            </div>
+            <div class="summary">
+                <p>Q1: <span class="Question"></span></p>
+                <p id="ans">Answer: <span class="answer"></span></p>
+                <p>Your Answer: <span class="yourAnswer"></span></p>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- <script src="quis.js"></script> -->
+<script src="quis copy.js"></script>
+</html>
